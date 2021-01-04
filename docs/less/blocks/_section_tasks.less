@@ -1,0 +1,118 @@
+.section-tasks {
+  padding-top: 83px;
+  padding-bottom: 20px;
+  position: relative;
+  background-color: #ffffff;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    padding-top: 54px;
+    padding-bottom: 20px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 90px;
+    padding-bottom: 20px;
+  }
+  &::before {
+    content: "";
+    background-color: rgb(164, 238, 203);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -90%) rotate(45deg);
+    -webkit-transform: translate(-50%, -90%) rotate(45deg);
+    -o-transform: translate(-50%, -90%) rotate(45deg);
+    -moz-transform: translate(-50%, -90%) rotate(45deg);
+
+    width: 186px;
+    height: 186px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    @media (min-width: 1200px) {
+      display: block;
+      left: 0;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -o-transform: translate(-50%, -50%) rotate(45deg);
+      -moz-transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+}
+.section-tasks-benefits {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    padding-right: 148px;
+    padding-left: 98px;
+  }
+}
+
+.picture {
+  padding-left: 25px;
+  width: 240px;
+
+  @media (min-width: 768px) {
+    width: 300px;
+  }
+  @media (min-width: 1200px) {
+    width: 360px;
+    img {
+      max-width: unset;
+    }
+  }
+}
+ 
+.tasks-content {
+  margin-bottom: 55px;
+  
+  max-width: 470px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0px;
+    max-width: 383px;
+     text-align: left;
+  }
+  @media (min-width: 1200px) {
+    max-width: 470px;
+  }
+}
+
+.title-tasks {
+  margin-bottom: 32px;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 38px;
+  }
+}
+
+.tasks-header {
+  margin-bottom: 35px;
+  line-height: 36px;
+  @media (min-width: 768px) {
+    margin-bottom: 44px;
+    line-height: 50px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 44px;
+    line-height: 58px;
+  }
+}

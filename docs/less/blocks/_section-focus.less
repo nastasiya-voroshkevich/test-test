@@ -1,0 +1,106 @@
+.section-focus {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-top: 1px solid #e1e1e1;
+  @media (min-width: 768px) {
+    padding-bottom: 0;
+    padding-top: 59px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 80px;
+  }
+  &::before {
+    content: "";
+    background-color: rgb(164, 238, 203);
+    position: absolute;
+    right: 50%;
+    top: 0;
+    transform: translate(50%, -90%) rotate(45deg);
+    -webkit-transform: translate(50%, -90%) rotate(45deg);
+    -o-transform: translate(50%, -90%) rotate(45deg);
+    -moz-transform: translate(50%, -90%) rotate(45deg);
+
+    width: 186px;
+    height: 186px;
+    @media (min-width: 768px) {
+      display: none;
+       }
+    @media (min-width: 1200px) {
+      display: block;
+      right: 0;
+      top: 50%;
+      transform: translate(50%, -50%) rotate(45deg);
+      -webkit-transform: translate(50%, -50%) rotate(45deg);
+      -o-transform: translate(50%, -50%) rotate(45deg);
+      -moz-transform: translate(50%, -50%) rotate(45deg); 
+    }
+  }
+}
+
+.section-focus__row {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    
+  }
+
+}
+.section-focus__img-wrapper {
+  position: relative;
+  max-width: 470px;
+  @media (min-width: 768px) {
+   max-width: unset; 
+   width: 470px;
+   height: 731px;
+ 
+   
+  }
+  @media (min-width: 1200px){
+  }
+}
+.text-left {
+  text-align: center;
+ 
+  @media (min-width: 768px){
+    text-align: left;
+    line-height: 2.2;
+
+  }
+}
+
+.section-focus__img {
+  position: static;
+  max-width: 100%;
+  transform: translateX(-5%);
+  @media (min-width: 768px){
+    max-width: unset;
+    transform: translateX(0%);
+    position: absolute;
+    right: 0;
+  
+    
+  }
+  @media (min-width: 1200px){
+    top: 0;
+  }
+}
+.section-focus__content {
+  padding-bottom: 50px;
+  max-width: 470px;
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+    max-width: 383px;
+  }
+  @media (min-width:1200px) {
+    padding-bottom: 126px;
+    max-width: 470px;
+  }
+}
